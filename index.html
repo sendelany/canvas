@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>canvas</title>
+    <meta name="description" content="canvas travel website" />
+    <meta name="author" content="Erance Sendelani Magoro" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+      />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+  </head>
+
+  <body>
+    <div class="row primary-navigation-row">
+      <div class="container">
+        <ul class="navigation-items">
+          <li class="navigation-item"><a href="./index.html">Home</a></li>
+          <li class="navigation-item">
+            <a href="#">FAQS</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">USD&nbsp;<i class="fa fa-chevron-down"
+                aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <ul class="navigation-social-links">
+          <li class="navigation-social-link">
+            <a href="#" target="_blank"><i class="fa fa-lg fa-facebook"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="navigation-social-link">
+            <a href="#" target="_blank"><i class="fa fa-lg fa-twitter"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="navigation-social-link">
+            <a href="#" target="_blank"><i class="fa fa-lg fa-pinterest-p"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="navigation-social-link">
+            <a href="#" target="_blank"><i class="fa fa-lg fa-instagram"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="navigation-social-link">
+            <a href="#" target="_blank"><i class="fa fa-lg fa-phone"
+                aria-hidden="true"></i></a>
+          </li>
+          <li class="navigation-social-link">
+            <a
+              href="mailto:person@cancas.sumting?subject=Website%20Inquiry&body=Hello%20there,%0D%0A%0D%0A
+              %20I%20would%20like%20to%20inquire%20about…"
+              target="_blank"><i class="fa fa-lg fa-envelope"
+                aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row secondary-navigation-row">
+        <div class="col-3">
+          <a href="./index.html" class="home-logo">
+            canvas
+          </a>
+        </div>
+        <div class="col-9">
+          <ul class="secondary-navigation-items">
+            <li class="secondary-navigation-item current">
+              <a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+            </li>
+            <li class="secondary-navigation-item">
+              <a href="#"><i class="fa fa-plane" aria-hidden="true"></i>&nbsp;Flights</a>
+            </li>
+            <li class="secondary-navigation-item">
+              <a href="#"><i class="fa fa-building" aria-hidden="true"></i>&nbsp;Hotels</a>
+            </li>
+            <li class="secondary-navigation-item">
+              <a href="#"><i class="fa fa-gift" aria-hidden="true"></i>&nbsp;Holidays</a>
+            </li>
+            <li class="secondary-navigation-item">
+              <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Blog</a>
+            </li>
+            <li class="secondary-navigation-item">
+              <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 1800 105 2541
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-8 tabs-container">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#flights" data-toggle="tab"><i
+                  class="fa fa-plane" aria-hidden="true"></i>&nbsp;Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hotels" data-toggle="tab"><i class="fa
+                  fa-building" aria-hidden="true"></i>&nbsp;Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#flightsandHotels" data-toggle="tab">Flights
+                + Hotels&nbsp;<span class="badge badge-danger">New</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#holidays" data-toggle="tab"><i
+                  class="fa fa-gift" aria-hidden="true"></i>&nbsp;Holidays</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="flights">
+              <div class="row"><div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <h1>Book your flights</h1>
+                      <div class="row mt-5">
+                        <div class="form-group col-sm-12 col-md-6">
+                          <label for="txtFrom">From</label>
+                          <input type="text" class="form-control
+                            form-control-lg" id="txtFrom"
+                            placeholder="Eg. Melbourne, Australia">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6">
+                          <label for="txtTo">To</label>
+                          <input type="text" class="form-control
+                            form-control-lg" id="txtTo"
+                            placeholder="Eg. New York, United States">
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="form-group col-sm-12 col-md-4">
+                          <label for="txtFrom">Departure</label>
+                          <input type="date" class="form-control
+                            form-control-lg" id="txtDeparture"
+                            placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4">
+                          <label for="txtReturn">Return</label>
+                          <input type="date" class="form-control
+                            form-control-lg" id="txtReturn"
+                            placeholder="MM/DD/YYYY">
+                        </div>
+                        <div class="form-group col-sm-12 col-md-4">
+                          <label for="txtAdults">Adults</label>
+                          <input type="number" class="form-control
+                            form-control-lg" id="txtAdults"
+                            value="2">
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-sm-12 col-md-6">
+                          <button class="btn btn-custom-absa">Search Flights</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <button class="btn btn-link btn-custom-absa-link">Advanced
+                            Search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="hotels">
+            <div class="row"><div class="col-12"> <div class="card"><div
+                    class="card-body">
+                    <h1>Book your hotels</h1></div></div></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="flightsandHotels">
+            <div class="row"><div class="col-12"> <div class="card"><div
+                    class="card-body">
+                    <h1>Book your flights & hotels</h1></div></div></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="holidays">
+            <div class="row"><div class="col-12"> <div class="card"><div
+                    class="card-body">
+                    <h1>Book your holidays</h1></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+      <script src="js/scripts.js"></script>
+    </body>
+  </html>

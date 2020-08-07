@@ -18,6 +18,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
       />
+    <link rel="stylesheet" href="css/absa-ci.css?v=1.0" />
     <link rel="stylesheet" href="css/styles.css?v=1.0" />
   </head>
 
@@ -32,9 +33,17 @@
           <li class="navigation-item">
             <a href="#">Contact</a>
           </li>
-          <li class="navigation-item">
-            <a href="#">USD&nbsp;<i class="fa fa-chevron-down"
+          <li class="navigation-item dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown"
+              role="button" aria-haspopup="true" aria-expanded="false" href="#">USD&nbsp;<i
+                class="fa
+                fa-chevron-down"
                 aria-hidden="true"></i></a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">USD</a>
+              <a class="dropdown-item" href="#">ZAR</a>
+              <a class="dropdown-item" href="#">CAD</a>
+            </div>
           </li>
         </ul>
         <ul class="navigation-social-links">
@@ -94,7 +103,7 @@
               <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Blog</a>
             </li>
             <li class="secondary-navigation-item">
-              <i class="fa fa-phone" aria-hidden="true"></i>&nbsp; 1800 105 2541
+              <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;1800 105 2541
             </li>
           </ul>
         </div>
@@ -112,7 +121,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#flightsandHotels" data-toggle="tab">Flights
-                + Hotels&nbsp;<span class="badge badge-danger">New</span></a>
+                + Hotels&nbsp;<span class="badge badge-danger">Save</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#holidays" data-toggle="tab"><i
@@ -124,8 +133,19 @@
               <div class="row"><div class="col-12">
                   <div class="card">
                     <div class="card-body">
-                      <h1>Book your flights</h1>
-                      <div class="row mt-5">
+                      <div class="row"><div class="col-sm-12 col-md-6">
+                          <h1>Book your flights</h1>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <div class="btn-group float-right" role="group"
+                            aria-label="First group">
+                            <button type="button" class="btn btn-custom-absa">Domestic</button>
+                            <button type="button" class="btn
+                              btn-outline-secondary">International</button>
+                          </div></div>
+                      </div>
+
+                      <div class="row mt-4">
                         <div class="form-group col-sm-12 col-md-6">
                           <label for="txtFrom">From</label>
                           <input type="text" class="form-control
@@ -139,7 +159,7 @@
                             placeholder="Eg. New York, United States">
                         </div>
                       </div>
-                      <div class="row mt-3">
+                      <div class="row mt-4">
                         <div class="form-group col-sm-12 col-md-4">
                           <label for="txtFrom">Departure</label>
                           <input type="date" class="form-control
@@ -159,13 +179,16 @@
                             value="2">
                         </div>
                       </div>
-                      <div class="row mt-3">
+                      <div class="row mt-4 mb-5">
                         <div class="col-sm-12 col-md-6">
-                          <button class="btn btn-custom-absa">Search Flights</button>
+                          <button class="btn btn-lg btn-custom-absa">Search
+                            Flights</button>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                          <button class="btn btn-link btn-custom-absa-link">Advanced
-                            Search</button>
+                          <button class="btn btn-lg btn-link
+                            btn-custom-absa-link
+                            float-right"><i>Advanced
+                              Search</i></button>
                         </div>
                       </div>
                     </div>
@@ -173,23 +196,23 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="hotels">
-            <div class="row"><div class="col-12"> <div class="card"><div
-                    class="card-body">
-                    <h1>Book your hotels</h1></div></div></div>
+            <div class="tab-pane fade" id="hotels">
+              <div class="row"><div class="col-12"> <div class="card"><div
+                      class="card-body">
+                      <h1>Book your hotels</h1></div></div></div>
+              </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="flightsandHotels">
-            <div class="row"><div class="col-12"> <div class="card"><div
-                    class="card-body">
-                    <h1>Book your flights & hotels</h1></div></div></div>
+            <div class="tab-pane fade" id="flightsandHotels">
+              <div class="row"><div class="col-12"> <div class="card"><div
+                      class="card-body">
+                      <h1>Book your flights & hotels</h1></div></div></div>
+              </div>
             </div>
-          </div>
-          <div class="tab-pane fade" id="holidays">
-            <div class="row"><div class="col-12"> <div class="card"><div
-                    class="card-body">
-                    <h1>Book your holidays</h1></div></div></div>
+            <div class="tab-pane fade" id="holidays">
+              <div class="row"><div class="col-12"> <div class="card"><div
+                      class="card-body">
+                      <h1>Book your holidays</h1></div></div></div>
+              </div>
             </div>
           </div>
         </div>

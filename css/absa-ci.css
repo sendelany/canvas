@@ -1,60 +1,86 @@
-
 .nav-tabs {
-    border-bottom: solid 6px #d0021b;
-  }
-  .nav-tabs .nav-link{
-    border:none;
-    /* border-bottom: solid 5px #d0021b; */
-    border-radius: 0 ;
-    color: #ffffff;
-    background-color: #2D2323;
-    padding:20px 30px;
-    font-weight: bold;
-  }
-  
-  .nav-item:not(:first-child){
+  border-bottom: solid 6px #d0021b;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  /* border-bottom: solid 5px #d0021b; */
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #2D2323;
+  padding: 15px 30px;
+  font-weight: bold;
+}
+
+.nav-item:not(:first-child) {
   border-left: solid 1px #ffffff !important;
-  }
-  
-  link, .nav-tabs .nav-link.active {
-    color: #ffffff;
-    background-color: #d0021b;
-    border-color: #d0021b #dee2e6 #d0021b;
-  }
-
-  .form-control, .form-control-lg{
-border-radius: 0;
-  }
-
-  .form-group label{
-      text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  .btn-lg{
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-.btn-custom-absa{
-    background-color: #d0021b;
-    color: #ffffff;    
-   
 }
 
-.btn-custom-absa-link{
-    color: #d0021b;
-    text-decoration: none;
-    border-bottom: 2px solid #d0021b;
-    border-radius: 0;
-    padding:3px 0;
-    text-transform: capitalize;
-    font-weight: normal;
+link,
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #d0021b;
+  border-color: #d0021b #dee2e6 #d0021b;
 }
 
-.btn-custom-absa-link:hover{
-    color: #1d1d1d;
-    text-decoration: none;
-    border-bottom: 2px solid #1d1d1d;
-    border-radius: 0;
-    padding:3px 0;
-  }
+.form-control,
+.form-control-lg {
+  border-radius: 0;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-lg {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-custom-absa {
+  background-color: #d0021b;
+  color: #ffffff;
+
+}
+
+.btn-custom-absa-link {
+  color: #d0021b;
+  text-decoration: none;
+  border-bottom: 2px solid #d0021b;
+  border-radius: 0;
+  padding: 3px 0;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.btn-custom-absa-link:hover {
+  color: #1d1d1d;
+  text-decoration: none;
+  border-bottom: 2px solid #1d1d1d;
+  border-radius: 0;
+  padding: 3px 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-toggle .fa {
+  font-weight: normal;
+  font-size: 8pt;
+  position: absolute;
+  top: 18px;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  color: #2D2323;
+}
+
+.tab-pane h1 {
+  text-transform: uppercase;
+  font-size: 18pt;
+  font-weight: 600;
+  color: #2D2323;
+}
